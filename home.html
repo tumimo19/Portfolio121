@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3OUKS Vapery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="announcement">Free Delivery in Meyerton ONLY,
+   REGISTER NOW</div>
+
+  <section class="hero">
+    <video autoplay muted loop playsinline>
+      <source src="27794-365891117_small.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <header id="mainHeader">
+      <img src="cropped-Logo-421.png" alt="3OUKS Vapery Logo" />
+      <div class="search-bar" id="searchBar">
+        <input type="text" placeholder="Search products...">
+        <button>Search</button>
+      </div>
+      <div class="search-toggle" onclick="toggleSearch()">🔍</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <nav id="navLinks">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Contact</a>
+        <a href="#">Login/Register</a>
+      </nav>
+    </header>
+
+    <h1 class="animated-text">
+      <div class="text-slider">
+        <span>Elevate Your Vaping Experience</span>
+        <span>Fast & Reliable Unmatched Quality</span>
+        <span>Premium Flavors For Every Taste</span>
+      </div>
+    </h1>
+    <p>Top-tier devices and accessories at unbeatable prices. Shop with 3OUKS Vapery.</p>
+    <button class="shop-btn">Shop</button>
+  </section>
+
+<h2 style="text-align:center; color:#ffdd00; margin-top: 2rem; font-size: 2rem;">
+  Explore Our Categories
+</h2>
+  <section class="categories">
+   <div class="category-item">
+  <div class="category-card music"></div>
+  <h3 class="category-label">NEW COLLECTION</h3>
+</div>
+<div class="category-item">
+  <div class="category-card art"></div>
+  <h3 class="category-label">FRUITY FLAVOURS</h3>
+</div>
+<div class="category-item">
+  <div class="category-card fashion"></div>
+  <h3 class="category-label">DISPOSABLES | VAPES</h3>
+</div>
+
+  </section>
+  <h2 style="text-align:center; color:#ffdd00; margin-top: 2rem; font-size: 2rem;">
+  FEATURED PRODUCTS
+</h2>
+ <div class="products-container">
+  <!-- Product 1 -->
+  <div class="product-card" onclick="showPopup('Cool Mint', 'A refreshing menthol vape flavor.', 'R120')">
+    <img src="UpscaleImage_5_20250515.jpeg" alt="Cool Mint">
+    <div class="product-name">Cool Mint</div>
+    <div class="product-price">R120</div>
+    <button class="add-btn">Add to Cart</button>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="product-card" onclick="showPopup('Strawberry Chill', 'Sweet and icy strawberry sensation.', 'R140')">
+    <img src="Screenshot 2025-05-15 190309.png" alt="Strawberry Chill">
+    <div class="product-name">Strawberry Chill</div>
+    <div class="product-price">R140</div>
+    <button class="add-btn">Add to Cart</button>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="product-card" onclick="showPopup('Tropical Ice', 'A juicy tropical blend with a cool finish.', 'R130')">
+    <img src="Screenshot 2025-05-15 191525.png" alt="Tropical Ice">
+    <div class="product-name">Tropical Ice</div>
+    <div class="product-price">R130</div>
+    <button class="add-btn">Add to Cart</button>
+  </div>
+
+  <!-- Product 4 -->
+  <div class="product-card" onclick="showPopup('Peach Splash', 'Smooth peach flavor with a splash of cool.', 'R125')">
+    <img src="thumb_491_0_0_0_0_auto.png" alt="Peach Splash">
+    <div class="product-name">Peach Splash</div>
+    <div class="product-price">R125</div>
+    <button class="add-btn">Add to Cart</button>
+  </div>
+
+  <!-- Product 5 -->
+  <div class="product-card" onclick="showPopup('Blueberry Frost', 'Bold blueberry flavor with frosty undertones.', 'R135')">
+    <img src="Screenshot 2025-05-15 193650.png" alt="Blueberry Frost">
+    <div class="product-name">Blueberry Frost</div>
+    <div class="product-price">R135</div>
+    <button class="add-btn">Add to Cart</button>
+  </div>
+</div>
+<div style="text-align: center; margin-bottom: 40px;">
+  <button style="
+    background-color: #cf8a0a;
+    color: #0a0a0a;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+  " onmouseover="this.style.backgroundColor='#cf8a0a'" onmouseout="this.style.backgroundColor='#cf8a0a'">
+    SHOP MORE
+  </button>
+</div>
+
+<!-- Popup + Overlay -->
+<div class="overlay" onclick="hidePopup()"></div>
+<div class="popup" id="popup">
+  <h3 id="popupName"></h3>
+  <p id="popupDesc"></p>
+  <strong id="popupPrice"></strong>
+  <br>
+  <button class="add-btn" onclick="alert('Added to cart!')">Add to Cart</button>
+</div>
+
+<section style="padding: 4rem 5%; background-color: #0a0a0a; color: #fff;">
+  <div style="max-width: 900px; margin: auto; text-align: center;">
+    <h2 style="color: #ffdd00; margin-bottom: 1rem;">About 3OUKS Vapery</h2>
+    <p style="margin-bottom: 2rem; color: #ccc;">
+      At 3OUKS Vapery, we're dedicated to offering premium vaping products, tailored to elevate your experience. 
+      Whether you're a beginner or a seasoned vaper, our store has something special for everyone.
+    </p>
+  <div style="text-align: center; margin-top: 1.5rem;">
+  <a href="https://facebook.com/3OUKSVapery" target="_blank" style="display: inline-block; margin: 0 5px;">
+    <img src="12212.jpg" alt="Facebook" style="width: 30px; height: 30px; border-radius: 25%;">
+  </a>
+  <a href="https://instagram.com/3OUKSVapery" target="_blank" style="display: inline-block; margin: 0 5px;">
+    <img src="Set Of Black Circle Social Media Logos With New X logo.jpg" alt="Instagram" style="width: 30px; height: 30px; border-radius: 25%;">
+  </a>
+</div>
+    <div style="margin-top: 3rem;">
+      <h3 style="color: #ffdd00; margin-bottom: 1rem;">Subscribe for Updates</h3>
+      <form style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+        <input type="email" placeholder="Enter your email" style="padding: 10px; width: 80%; max-width: 400px; border-radius: 5px; border: none;">
+        <button type="submit" style="padding: 10px 20px; background-color: #ffdd00; color: #000; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 3OUKS Vapery. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showPopup(name, desc, price) {
+    document.getElementById('popupName').innerText = name;
+    document.getElementById('popupDesc').innerText = desc;
+    document.getElementById('popupPrice').innerText = price;
+    document.querySelector('.popup').style.display = 'block';
+    document.querySelector('.overlay').style.display = 'block';
+  }
+
+  function hidePopup() {
+    document.querySelector('.popup').style.display = 'none';
+    document.querySelector('.overlay').style.display = 'none';
+  }
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+      
+      // Close search if open
+      const search = document.getElementById('searchBar');
+      search.classList.remove('active');
+    }
+    
+    function toggleSearch() {
+      const search = document.getElementById('searchBar');
+      search.classList.toggle('active');
+      
+      // Close menu if open
+      const nav = document.getElementById('navLinks');
+      nav.classList.remove('active');
+    }
+    
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('mainHeader');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    
+    // Close menus when clicking outside
+    document.addEventListener('click', function(event) {
+      const nav = document.getElementById('navLinks');
+      const search = document.getElementById('searchBar');
+      const menuToggle = document.querySelector('.menu-toggle');
+      const searchToggle = document.querySelector('.search-toggle');
+      
+      if (!nav.contains(event.target) && !menuToggle.contains(event.target)) {
+        nav.classList.remove('active');
+      }
+      
+      if (!search.contains(event.target) && !searchToggle.contains(event.target)) {
+        search.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>
